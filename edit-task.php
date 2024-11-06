@@ -32,7 +32,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 	<div class="body">
 		<?php include "inc/nav.php" ?>
 		<section class="section-1">
-			<h4 class="title">Edit Task <a href="tasks.php">Tasks</a></h4>
+			<h4 class="title">Ubah Tugas <a href="tasks.php">Tasks</a></h4>
 			<form class="form-1"
 			      method="POST"
 			      action="app/update-task.php">
@@ -48,20 +48,20 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 			</div>
       	  <?php } ?>
 				<div class="input-holder">
-					<lable>Title</lable>
+					<label>Judul</label>
 					<input type="text" name="title" class="input-1" placeholder="Full Name" value="<?=$task['title']?>"><br>
 				</div>
 				<div class="input-holder">
-					<lable>Description</lable>
+					<label>Deskripsi</label>
 					<textarea name="description" rows="5" class="input-1" ><?=$task['description']?></textarea><br>
 				</div>
 				<div class="input-holder">
-					<lable>Snooze</lable>
+					<label>Snooze</label>
 					<input type="date" name="due_date" class="input-1" placeholder="Snooze" value="<?=$task['due_date']?>"><br>
 				</div>
 				
             <div class="input-holder">
-					<lable>Assigned to</lable>
+					<label>Ditugaskan ke</label>
 					<select name="assigned_to" class="input-1">
 						<option value="0">Select employee</option>
 						<?php if ($users !=0) { 
@@ -75,7 +75,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 				</div>
 				<input type="text" name="id" value="<?=$task['id']?>" hidden>
 
-				<button class="edit-btn">Update</button>
+				<button class="edit-btn">Ubah</button>
 			</form>
 			
 		</section>

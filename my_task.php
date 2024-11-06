@@ -22,7 +22,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id'])) {
 	<div class="body">
 		<?php include "inc/nav.php" ?>
 		<section class="section-1">
-			<h4 class="title">My Tasks</h4>
+			<h4 class="title">Tugas Saya</h4>
 			<?php if (isset($_GET['success'])) {?>
       	  	<div class="success" role="alert">
 			  <?php echo stripcslashes($_GET['success']); ?>
@@ -31,11 +31,11 @@ if (isset($_SESSION['role']) && isset($_SESSION['id'])) {
 			<?php if ($tasks != 0) { ?>
 			<table class="main-table">
 				<tr>
-					<th>#</th>
-					<th>Title</th>
-					<th>Description</th>
+					<th>No</th>
+					<th>Judul</th>
+					<th>Deskripsi</th>
 					<th>Status</th>
-					<th>Due Date</th>
+					<th>Deadline</th>
 					<th>Action</th>
 				</tr>
 				<?php $i=0; foreach ($tasks as $task) { ?>
@@ -47,7 +47,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id'])) {
 	            <td><?=$task['due_date']?></td>
 
 					<td>
-						<a href="edit-task-employee.php?id=<?=$task['id']?>" class="edit-btn">Edit</a>
+						<a href="edit-task-employee.php?id=<?=$task['id']?>" class="edit-btn">Ubah</a>
 					</td>
 				</tr>
 			   <?php	} ?>

@@ -31,10 +31,10 @@ if (isset($_SESSION['role']) && isset($_SESSION['id'])) {
 			<?php if ($notifications != 0) { ?>
 			<table class="main-table">
 				<tr>
-					<th>#</th>
-					<th>Message</th>
+					<th>No</th>
+					<th>Pesan</th>
 					<th>Type</th>
-					<th>Date</th>
+					<th>Tanggal</th>
 				</tr>
 				<?php $i=0; foreach ($notifications as $notification) { ?>
 				<tr>

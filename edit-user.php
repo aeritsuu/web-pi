@@ -47,20 +47,20 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 			</div>
       	  <?php } ?>
 				<div class="input-holder">
-					<lable>Full Name</lable>
+					<label>Full Name</label>
 					<input type="text" name="full_name" class="input-1" placeholder="Full Name" value="<?=$user['full_name']?>"><br>
 				</div>
 				<div class="input-holder">
-					<lable>Username</lable>
+					<label>Username</label>
 					<input type="text" name="user_name" value="<?=$user['username']?>" class="input-1" placeholder="Username"><br>
 				</div>
 				<div class="input-holder">
-					<lable>Password</lable>
+					<label>Password</label>
 					<input type="text" value="**********" name="password" class="input-1" placeholder="Password"><br>
 				</div>
 				<input type="text" name="id" value="<?=$user['id']?>" hidden>
 
-				<button class="edit-btn">Update</button>
+				<button class="edit-btn">Ubah</button>
 			</form>
 			
 		</section>

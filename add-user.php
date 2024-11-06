@@ -33,19 +33,19 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 			</div>
       	  <?php } ?>
 				<div class="input-holder">
-					<lable>Full Name</lable>
+					<label>Nama Lengkap</label>
 					<input type="text" name="full_name" class="input-1" placeholder="Full Name"><br>
 				</div>
 				<div class="input-holder">
-					<lable>Username</lable>
+					<label>Username</label>
 					<input type="text" name="user_name" class="input-1" placeholder="Username"><br>
 				</div>
 				<div class="input-holder">
-					<lable>Password</lable>
+					<label>Password</label>
 					<input type="text" name="password" class="input-1" placeholder="Password"><br>
 				</div>
 
-				<button class="edit-btn">Add</button>
+				<button class="edit-btn">Tambah</button>
 			</form>
 			
 		</section>

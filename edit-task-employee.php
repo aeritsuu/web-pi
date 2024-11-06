@@ -48,12 +48,12 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 			</div>
       	  <?php } ?>
 				<div class="input-holder">
-					<lable></lable>
+					<label></label>
 					<p><b>Title: </b><?=$task['title']?></p>
 				</div>
 				<div class="input-holder">
-					<lable></lable>
-					<p><b>Description: </b><?=$task['description']?></p>
+					<label></label>
+					<p><b>Deskripsi: </b><?=$task['description']?></p>
 				</div><br>
             <div class="input-holder">
 					<lable>Status</lable>
@@ -66,7 +66,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 				</div>
 				<input type="text" name="id" value="<?=$task['id']?>" hidden>
 
-				<button class="edit-btn">Update</button>
+				<button class="edit-btn">Ubah</button>
 			</form>
 			
 		</section>

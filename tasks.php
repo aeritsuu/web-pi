@@ -44,11 +44,11 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 		<?php include "inc/nav.php" ?>
 		<section class="section-1">
 			<h4 class="title-2">
-				<a href="create_task.php" class="btn">Create Task</a>
+				<a href="create_task.php" class="btn">Buat Tugas</a>
 				<a href="tasks.php?due_date=Due Today">Due Today</a>
-				<a href="tasks.php?due_date=Overdue">Overdue</a>
+				<a href="tasks.php?due_date=Overdue">Telat</a>
 				<a href="tasks.php?due_date=No Deadline">No Deadline</a>
-				<a href="tasks.php">All Tasks</a>
+				<a href="tasks.php">Seluruh Tugas</a>
  
 			</h4>
          <h4 class="title-2"><?=$text?> (<?=$num_task?>)</h4>
@@ -60,10 +60,10 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 			<?php if ($tasks != 0) { ?>
 			<table class="main-table">
 				<tr>
-					<th>#</th>
-					<th>Title</th>
-					<th>Description</th>
-					<th>Assigned To</th>
+					<th>No</th>
+					<th>Judul</th>
+					<th>Deskripsi</th>
+					<th>Ditugaskan ke</th>
 					<th>Due Date</th>
 					<th>Status</th>
 					<th>Action</th>
@@ -85,14 +85,14 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 	               ?></td>
 	            <td><?=$task['status']?></td>
 					<td>
-						<a href="edit-task.php?id=<?=$task['id']?>" class="edit-btn">Edit</a>
-						<a href="delete-task.php?id=<?=$task['id']?>" class="delete-btn">Delete</a>
+						<a href="edit-task.php?id=<?=$task['id']?>" class="edit-btn">Ubah</a>
+						<a href="delete-task.php?id=<?=$task['id']?>" class="delete-btn">Hapus</a>
 					</td>
 				</tr>
 			   <?php	} ?>
 			</table>
 		<?php }else { ?>
-			<h3>Empty</h3>
+			<h3>Tidak ada tugas!</h3>
 		<?php  }?>
 			
 		</section>

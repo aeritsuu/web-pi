@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Login | Task Management System</title>
+	<title>Praktik Industri!</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 </head>
@@ -11,7 +11,7 @@
       
       <form method="POST" action="app/login.php" class="shadow p-4">
 
-      	  <h3 class="display-4">LOGIN</h3>
+      	  <h3 class="display-4">PRAKTIK INDUSTRI</h3>
       	  <?php if (isset($_GET['error'])) {?>
       	  	<div class="alert alert-danger" role="alert">
 			  <?php echo stripcslashes($_GET['error']); ?>
@@ -32,7 +32,7 @@
   
 			
 		  <div class="mb-3">
-		    <label for="exampleInputEmail1" class="form-label">User name</label>
+		    <label for="exampleInputEmail1" class="form-label">Username</label>
 		    <input type="text" class="form-control" name="user_name">
 		  </div>
 		  <div class="mb-3">

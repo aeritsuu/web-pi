@@ -42,11 +42,11 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) ) {
 				<div class="dashboard">
 					<div class="dashboard-item">
 						<i class="fa fa-users"></i>
-						<span><?=$num_users?> Employee</span>
+						<span><?=$num_users?> Karyawan</span>
 					</div>
 					<div class="dashboard-item">
 						<i class="fa fa-tasks"></i>
-						<span><?=$num_task?> All Tasks</span>
+						<span><?=$num_task?> Seluruh tugas</span>
 					</div>
 					<div class="dashboard-item">
 						<i class="fa fa-window-close-o"></i>
@@ -62,7 +62,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) ) {
 					</div>
 					<div class="dashboard-item">
 						<i class="fa fa-bell"></i>
-						<span><?=$overdue_task?> Notifications</span>
+						<span><?=$overdue_task?> Notifikasi</span>
 					</div>
 					<div class="dashboard-item">
 						<i class="fa fa-square-o"></i>
@@ -74,18 +74,18 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) ) {
 					</div>
 					<div class="dashboard-item">
 						<i class="fa fa-check-square-o"></i>
-						<span><?=$completed?> Completed</span>
+						<span><?=$completed?> Selesai</span>
 					</div>
 				</div>
 			<?php }else{ ?>
 				<div class="dashboard">
 					<div class="dashboard-item">
 						<i class="fa fa-tasks"></i>
-						<span><?=$num_my_task?> My Tasks</span>
+						<span><?=$num_my_task?> Tugas saya</span>
 					</div>
 					<div class="dashboard-item">
 						<i class="fa fa-window-close-o"></i>
-						<span><?=$overdue_task?> Overdue</span>
+						<span><?=$overdue_task?> Telat</span>
 					</div>
 					<div class="dashboard-item">
 						<i class="fa fa-clock-o"></i>
@@ -101,7 +101,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) ) {
 					</div>
 					<div class="dashboard-item">
 						<i class="fa fa-check-square-o"></i>
-						<span><?=$completed?> Completed</span>
+						<span><?=$completed?> Selesai</span>
 					</div>
 				</div>
 			<?php } ?>

@@ -21,7 +21,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 	<div class="body">
 		<?php include "inc/nav.php" ?>
 		<section class="section-1">
-			<h4 class="title">Create Task </h4>
+			<h4 class="title">Buat Tugas</h4>
 		   <form class="form-1"
 			      method="POST"
 			      action="app/add-task.php">
@@ -37,19 +37,19 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 			</div>
       	  <?php } ?>
 				<div class="input-holder">
-					<lable>Title</lable>
+					<label>Judul</label>
 					<input type="text" name="title" class="input-1" placeholder="Title"><br>
 				</div>
 				<div class="input-holder">
-					<lable>Description</lable>
+					<label>Deskripsi</label>
 					<textarea type="text" name="description" class="input-1" placeholder="Description"></textarea><br>
 				</div>
 				<div class="input-holder">
-					<lable>Due Date</lable>
+					<label>Due Date</label>
 					<input type="date" name="due_date" class="input-1" placeholder="Due Date"><br>
 				</div>
 				<div class="input-holder">
-					<lable>Assigned to</lable>
+					<label>Ditugaskan ke</label>
 					<select name="assigned_to" class="input-1">
 						<option value="0">Select employee</option>
 						<?php if ($users !=0) { 
@@ -59,7 +59,7 @@ if (isset($_SESSION['role']) && isset($_SESSION['id']) && $_SESSION['role'] == "
 						<?php } } ?>
 					</select><br>
 				</div>
-				<button class="edit-btn">Create Task</button>
+				<button class="edit-btn">Buat Task</button>
 			</form>
 			
 		</section>
